@@ -598,17 +598,15 @@ footer a:hover {
   padding: 30px 22px;
   border-bottom: 1px solid var(--line);
   display: grid;
-  grid-template-columns: 42px 1fr auto;
+  grid-template-columns: 42px 1fr;
   gap: 18px;
   align-items: center;
-  transition: .25s;
 }
 
 .event:nth-child(odd) {
   border-right: 1px solid var(--line);
 }
 
-.event:hover,
 .event.highlight {
   background: #0e0e0e;
 }
@@ -631,10 +629,6 @@ footer a:hover {
   font: 500 10px/1.3 'IBM Plex Mono', monospace;
   color: #777;
   margin: 0;
-}
-
-.event-arrow {
-  color: var(--orange);
 }
 
 .performance-photo {
