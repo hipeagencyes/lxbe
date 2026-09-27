@@ -681,6 +681,8 @@ footer a:hover {
 
 .gallery-item.wide {
   grid-column: 1/-1;
+  grid-row: 3;
+  min-height: min(90svh, 900px);
 }
 
 .gallery-item img {
@@ -1102,6 +1104,8 @@ footer p {
 
   .gallery-item.wide {
     grid-column: auto;
+    grid-row: auto;
+    min-height: 70svh;
   }
 
   .residency-grid {
