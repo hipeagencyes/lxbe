@@ -6,8 +6,7 @@
   --black: #050505;
   --white: #f4f2ed;
   --muted: #979797;
-  --red: #ff3333;
-  --orange: #ff6b35;
+  --red: #ff0000;
   --line: rgba(255, 255, 255, .14);
 }
 
@@ -192,7 +191,7 @@ footer a:hover {
 }
 
 .primary {
-  background: var(--orange);
+  background: var(--red);
   color: #090909;
 }
 
@@ -238,7 +237,7 @@ footer a:hover {
 .scroll-cue span {
   height: 45px;
   width: 1px;
-  background: var(--orange);
+  background: var(--red);
 }
 
 
@@ -295,7 +294,7 @@ footer a:hover {
   position: absolute;
   left: -1px;
   bottom: -1px;
-  background: var(--orange);
+  background: var(--red);
   color: black;
   padding: 16px 20px;
   font: 700 10px/1.5 'IBM Plex Mono', monospace;
@@ -431,7 +430,7 @@ footer a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--orange);
+  background: var(--red);
   color: black;
   text-decoration: none;
   padding: 36px 45px;
@@ -481,13 +480,13 @@ footer a:hover {
   width: 185px;
   height: 185px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--red);
   color: black;
   display: grid;
   place-content: center;
   text-align: center;
   font: 700 36px/.9 'IBM Plex Mono', monospace;
-  box-shadow: 0 0 130px rgba(255, 107, 53, .25);
+  box-shadow: 0 0 130px rgba(255, 0, 0, .25);
 }
 
 .world-core small {
@@ -543,8 +542,8 @@ footer a:hover {
 
 .country-button:hover,
 .country-button.active {
-  background: var(--orange);
-  border-color: var(--orange);
+  background: var(--red);
+  border-color: var(--red);
   color: black;
   transform: scale(1.06);
 }
@@ -587,7 +586,7 @@ footer a:hover {
 
 .year-tabs button.active {
   color: var(--red);
-  border-color: var(--orange);
+  border-color: var(--red);
 }
 
 .events {
@@ -613,7 +612,7 @@ footer a:hover {
 }
 
 .event.highlight {
-  box-shadow: inset 3px 0 var(--orange);
+  box-shadow: inset 3px 0 var(--red);
 }
 
 .event-index {
@@ -1208,18 +1207,18 @@ footer p {
 }
 
 .country-shape.played {
-  fill: var(--orange);
+  fill: var(--red);
   stroke: rgba(255, 255, 255, .55);
   cursor: pointer;
-  filter: drop-shadow(0 0 6px rgba(255, 107, 53, .35));
+  filter: drop-shadow(0 0 6px rgba(255, 0, 0, .35));
 }
 
 .country-shape.played:hover,
 .country-shape.played.active,
 .country-shape.played:focus-visible {
-  fill: #ff875d;
+  fill: #ff0000;
   stroke: white;
-  filter: drop-shadow(0 0 12px rgba(255, 107, 53, .75));
+  filter: drop-shadow(0 0 12px rgba(255, 0, 0, .75));
 }
 
 .map-label {
@@ -1228,17 +1227,17 @@ footer p {
 }
 
 .map-label line {
-  stroke: rgba(255, 107, 53, .65);
+  stroke: rgba(255, 0, 0, .65);
   stroke-width: 1;
   vector-effect: non-scaling-stroke;
 }
 
 .map-label circle {
-  fill: var(--orange);
+  fill: var(--red);
   stroke: #fff;
   stroke-width: 1;
   vector-effect: non-scaling-stroke;
-  filter: drop-shadow(0 0 5px rgba(255, 107, 53, .75));
+  filter: drop-shadow(0 0 5px rgba(255, 0, 0, .75));
 }
 
 /* font-size va en unidades del viewBox (1200 de ancho), así que escala con el
@@ -1465,7 +1464,7 @@ button.btn {
 .field input:focus,
 .field textarea:focus {
   outline: 0;
-  border-color: var(--orange);
+  border-color: var(--red);
   background: rgba(255, 255, 255, .06);
 }
 
@@ -1564,7 +1563,7 @@ button.btn {
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 107, 53, .55) transparent;
+  scrollbar-color: rgba(255, 0, 0, .55) transparent;
 }
 
 ::-webkit-scrollbar {
@@ -1577,12 +1576,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 107, 53, .5);
+  background: rgba(255, 0, 0, .5);
   border: 2px solid var(--black);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--orange);
+  background: var(--red);
 }
 
 ::-webkit-scrollbar-corner {
@@ -1626,8 +1625,8 @@ html {
 }
 
 .to-top:hover {
-  background: var(--orange);
-  border-color: var(--orange);
+  background: var(--red);
+  border-color: var(--red);
   color: #090909;
   transform: translateY(-3px);
 }
@@ -1666,12 +1665,12 @@ html {
   width: 17px;
   height: 17px;
   margin: 2px 0 0;
-  accent-color: var(--orange);
+  accent-color: var(--red);
   cursor: pointer;
 }
 
 .field.consent input[type="checkbox"]:focus-visible {
-  outline: 2px solid var(--orange);
+  outline: 2px solid var(--red);
   outline-offset: 3px;
 }
 
