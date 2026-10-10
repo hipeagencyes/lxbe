@@ -759,7 +759,7 @@ footer a:hover {
 
 .rider-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -778,8 +778,7 @@ footer a:hover {
 }
 
 .rider-list li:nth-child(even) {
-  padding-left: 30px;
-  border-left: 1px solid var(--line);
+  padding-left: 0;
 }
 
 .rider-quantity {
@@ -1166,15 +1165,6 @@ footer p {
   .residency-grid article > span {
     grid-column: 2;
     margin-top: 9px;
-  }
-
-  .rider-list {
-    grid-template-columns: 1fr;
-  }
-
-  .rider-list li:nth-child(even) {
-    padding-left: 0;
-    border-left: 0;
   }
 
   .contact {
