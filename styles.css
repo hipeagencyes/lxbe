@@ -750,6 +750,46 @@ footer a:hover {
 
 
 /* ============================================================
+   TECHNICAL RIDER
+   ============================================================ */
+
+.rider {
+  background: #090909;
+}
+
+.rider-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.rider-list li {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  align-items: center;
+  gap: 20px;
+  min-height: 100px;
+  padding: 24px 30px 24px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: clamp(1rem, 1.7vw, 1.3rem);
+}
+
+.rider-list li:nth-child(even) {
+  padding-left: 30px;
+  border-left: 1px solid var(--line);
+}
+
+.rider-quantity {
+  color: var(--red);
+  font: 600 12px/1 'IBM Plex Mono', monospace;
+  letter-spacing: .08em;
+}
+
+
+/* ============================================================
    CONTACT
    ============================================================ */
 
@@ -1126,6 +1166,15 @@ footer p {
   .residency-grid article > span {
     grid-column: 2;
     margin-top: 9px;
+  }
+
+  .rider-list {
+    grid-template-columns: 1fr;
+  }
+
+  .rider-list li:nth-child(even) {
+    padding-left: 0;
+    border-left: 0;
   }
 
   .contact {
